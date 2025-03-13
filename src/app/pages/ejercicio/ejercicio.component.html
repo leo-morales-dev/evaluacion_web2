@@ -1,0 +1,61 @@
+<div class="container mt-4">
+    <div class="contenedor">
+        <h1>Gestión de Ejercicios</h1>
+    <div>
+
+      <div class="mb-3 form-group">
+        <label>Nombre del ejercicio</label>
+        <input type="text" class="form-control" [(ngModel)]="ejercicio.nombre" required/>
+      </div>
+  
+      <div class="mb-3 form-group">
+        <label>Categoría</label>
+        <select [(ngModel)]="ejercicio.categoria" id="categoria" class="form-select">
+            <option>Fuerza</option>
+            <option>Cardio</option>
+            <option>Flexibilidad</option>
+        </select>
+      </div>
+  
+      <div class="mb-3 form-group">
+        <label>Duración (minutos)</label>
+        <input [(ngModel)]="ejercicio.duracion" type="number" class="form-control"/>
+      </div>
+  
+      <button type="submit" class="btn btn-primary" (click)="agregarEjercicio()">Agregar</button>
+      <button type="submit" class="btn btn-warning" (click)="updateEjercicio()">Actualizar</button>
+      <button type="button" class="btn btn-danger btn-sm" (click)="deleteEjercicio()">Eliminar</button>
+    </div>
+  
+    <hr>
+  
+ 
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Categoria</th>
+                <th>Duracion</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (ejercicio of ejercicios; track ejercicio.id) {
+                <tr>
+                    <td>{{ ejercicio.nombre }}</td>
+                    <td>{{ ejercicio.categoria }}</td>
+                    <td>{{ ejercicio.duracion }}</td>
+                    <td class="table-buttons">
+                        <button type="button" class="btn btn-success btn-sm" (click)="selectEjercicio(ejercicio)">Seleccionar</button>
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+  </div>
+    </div>
+    
+  

@@ -1,0 +1,48 @@
+/* Estilo general para el contenedor */
+.about-container {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    background-image: url('https://scontent.fqro3-1.fna.fbcdn.net/v/t39.30808-6/476647405_2162360787553405_420286797410454555_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEgmjAXj0Z-UNzoca_tGbbYIVed1jWRSO4hV53WNZFI7gG5qd3FHqRbRH_hbpGl8p9JoMDh2rK_kqJIsJXMjgrS&_nc_ohc=9Y21-VWd4VEQ7kNvgHrMahG&_nc_oc=AdgijKTZW_xxNpeH0yYcXuzbrIYcPgioIh6O64l2LrPXsgxEA1HS4JTMRZ5v0P8Jom8&_nc_zt=23&_nc_ht=scontent.fqro3-1.fna&_nc_gid=ARettyPDp5fw6bxijREJDRl&oh=00_AYF3zl81sFbA9IV6winKG3ILZYT6gYB-ckefPatv7DvQrw&oe=67D7923A');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 400px; /* Ajusta la altura según necesites */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para el título */
+.about-container h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para el texto descriptivo */
+.about-container p {
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para resaltar palabras clave */
+.about-container strong {
+    color: #ffdd57; /* Un color amarillo para resaltar */
+    font-weight: bold;
+}
+
+/* Estilo para el fondo del body */
+body.bg-light {
+    background-color: #f8f9fa !important;
+}
